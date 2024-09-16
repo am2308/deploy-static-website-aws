@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Terraform initialize
         working-directory: ./terraform
-        run: terraform init
+        run: terraform init --backend-config="vars/test.backend.tfvars"
 
       - name: Run Terraform pan
         working-directory: ./terraform
