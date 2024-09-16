@@ -1,9 +1,10 @@
 name: Provision S3 Bucket
 
 on:
-  push:
-    branches:
-      - feature/demo  # or the branch you want to trigger the workflow
+  workflow_dispatch:
+  #push:
+    #branches:
+      #- feature/demo  # or the branch you want to trigger the workflow
 
 jobs:
   Deploy-plan:
