@@ -3,7 +3,7 @@ name: Provision S3 Bucket
 on:
   push:
     branches:
-      - main  # or the branch you want to trigger the workflow
+      - feature/demo  # or the branch you want to trigger the workflow
 
 jobs:
   provision:
